@@ -20,6 +20,9 @@ if (isset($_POST['createRecord'])) {
     $result->bindValue(":height", $height);
     $result->bindValue(":publisher", $publisher);
     $success = $result->execute();
+    header( header('Location: list-books.php'));
+    die();
+
 }
 
 ?>

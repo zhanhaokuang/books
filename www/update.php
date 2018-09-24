@@ -33,6 +33,8 @@ if(!isset($_POST['updateRecord'])){
             'publisher' => $publisher,
             'id'        => $id
         ]);
+        header('Location: list-books.php');
+        die();
     }
 //    if(isset($_POST['updateRecord2'])){
 //        $id = $_POST['id1'];
